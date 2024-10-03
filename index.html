@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inventory System</title>
+</head>
+<body>
+    <form id="carForm">
+        <label for="name">Car name:</label>
+        <input type="text" id="name" required>
+
+        <label for="model">Car model:</label>
+        <input type="text" id="model" required>
+
+        <label for="year">Manufacture Year:</label>
+        <input type="number" id="year" required>
+
+        <label for="price">Car Price ($):</label>
+        <input type="number" id="price" required>
+
+        <button type="button" onclick="addCar()">Add Car</button>
+    </form>
+
+    <div id="carList"></div>
+    <button type="button" onclick="showTotalPriceButton()">Show Total Price of All Cars</button>
+    <script src="script.js"></script>
+</body>
+</html>
